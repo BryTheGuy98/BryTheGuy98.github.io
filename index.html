@@ -2,16 +2,174 @@
 <html lang="en-US">
 <head>
 	<meta charset="utf-8" />
-	<title>My test page</title>
+	<title>Bryan Robare's Portfolio</title>
 </head>
+
+<!-- TODO:
+	- Navbar to jump to specific sections
+	- Implement JSON to store and read project data so additional content can easily be added
+	- Aesthetic improvements
+	-->
+<!-- Link: https://brytheguy98.github.io/ -->
+<!-- Templete:
+		
+		<section>
+		<h3 id="title"></h3>
+		<p id="link">
+				Link:
+				<a href=""></a>
+		</p>
+		<image id="screenshot" src="" height="500"></image>
+		<p id="description"></p>
+		</section>
+
+	-->
+
 <body>
-	<h1>Cats</h1>
-	<p>Cats are adorable and independant, which makes them <strong>excellent</strong> pets. That being said, just because they're <strong>independant</strong>, that doesn't mean they don't want <strong>attention</strong>.</p>
-	<a href="https://www.cats.org.uk/cats-blog/9-things-to-know-before-getting-your-first-cat"
-		 title="Blog Link">More about Cats</a>
-	<div>
-		<image src="https://www.cats.org.uk/media/13136/220325case013.jpg?width=500&height=333.49609375"
-					 alt="A cute cat" height="300" width="500"></image>
+	<div title="Opening">
+		<h1>Bryan Robare</h1>
+		<p>Ahoy there! I'm Bryan Robare. Welcome to my creative portfolio!</p>
+		<image src="public/media/me.jpg" alt="Photo of Me" height="500"></image>
+	</div>
+
+	<div title="Projects">
+		<section title="UE5">
+			<h2>Unreal Engine 5 Works</h2>
+			<section>
+				<h3 id="title">Unreal Paradise</h3>
+				<p id="link">
+					Link:
+					<a href="https://drive.google.com/drive/folders/1rWQzXhbDIPuwWWfsI0pRtmgwxucyMQQI?usp=drive_link">GDrive</a>
+				</p>
+				<!--TODO: gif-->
+				<image id="screenshot" src="public/media/UE.paradise.png" alt="Unreal Paradise Screenshot" height="500"></image>
+				<p id="description">A functional open world level made in Unreal Engine 5, showcasing knowledge of how to use Unreal Engine 5 to create levels. A video demo is provided in the linked folder.</p>
+			</section>
+
+			<section>
+				<h3 id="title">Greybox - Horror Mall</h3>
+				<p id="link">
+					Link:
+					<a href="https://drive.google.com/drive/folders/14ksMqFqlWab-x68--LX4HjachnKzb-AQ?usp=drive_link">GDrive</a>
+				</p>
+				<image id="screenshot" src="public/media/UE.greybox.png" height="500"></image>
+				<p id="description">A level design exercise using Unreal Engine 5 in which I went through a full professional development cycle to design and build a level for a horror game. Includes a Level Design Document, outline and graph sketches, and a video demo of the completed greybox level.</p>
+			</section>
+
+			<section>
+				<h3 id="title">Static Camera Prototype</h3>
+				<p id="link">
+					Link:
+					<a href="">GDrive</a>
+				</p>
+				<image id="screenshot" src="" height="500"></image>
+				<p id="description">Prototype for a horror game which makes use of tank controls and a camera which switches between static positions.</p>
+			</section>
+		</section>
+
+
+		<section title="Shaders">
+			<h2>Shader Works</h2>
+			<section>
+				<h3 id="title">Morrowind Shaders</h3>
+				<p id="link">
+					Links (GitHub):
+					<a href="https://github.com/BryTheGuy98/OpenMWColorShader">Colors</a>, <a href="https://github.com/BryTheGuy98/OpenMW-Shader-Pixelation">Pixelation</a>
+				</p>
+				<!--TODO: gif-->
+				<image id="multiscreenshot" src="public/media/shader.color.png" height="500"></image>
+				<image id="multiscreenshot" src="public/media/shader.pixels.png" height="500"></image>
+				<p id="description">A small collection of custom shader effects I developed for the unofficial OpenGL port of TES3: Morrowind. Features unique artistic effects such as reduced color complexity or pixelated graphics. Each effect can also be customized by the user, such as the size of pixels.</p>
+			</section>
+
+			<section>
+				<h3 id="title">Home in Space</h3>
+				<p id="link">
+					Link:
+					<a href="https://github.com/BryTheGuy98/HomeInSpace">GitHub</a>
+				</p>
+				<!--TODO: gif-->
+				<image id="screenshot" src="public/media/shaders.home.jpg" height="500"></image>
+				<p id="description">Live-rendered animated scene, created using custom-made Java and GLSL shader programming. Since it’s a live render, the view can be moved around, and the sun can be moved to re-angle the lighting.</p>
+			</section>
+		</section>
+
+		<section title="Programming">
+			<h2>Programming Works</h2>
+			<section>
+				<h3 id="title">Closest to the Pin</h3>
+				<p id="link">
+					Link:
+					<a href="https://github.com/BryTheGuy98/ClosestToThePin">GitHub</a>
+				</p>
+				<!--TODO: gif-->
+				<image id="screenshot" src="public/media/tech.golf.png" height="500"></image>
+				<p id="description">This basic 3D game is made using a custom engine which implements physics simulation, 3D sound, basic AI for NPCs, and even basic multiplayer functionality via UDP. The player is tasked with hitting a golf ball as close to the hole as possible. Your final distance is added together (meaning a lower score is better) and compared to all other players. The player with the lowest score wins.</p>
+			</section>
+
+			<section>
+				<h3 id="title">Dice Engine</h3>
+				<p id="link">
+					Link:
+					<a href="https://github.com/BryTheGuy98/DiceEngine">GitHub</a>
+				</p>
+				<image id="screenshot" src="public/media/tech.dice.jpg" height="500"></image>
+				<p id="description">A C++ program for generating random dice rolls for RPG games. Also features customizable options for methods of randomness.</p>
+			</section>
+		</section>
+
+		<section title="RPG">
+			<h2>RPG Works</h2>
+			<section>
+				<h3 id="title">The Elder Scrolls Adventures</h3>
+				<p id="link">
+					Link:
+					<a href="https://docs.google.com/document/d/1NmpsgWaqX1oLEKjXII-QLnn1RQ_anQPV/edit?usp=sharing&ouid=111385170732546997033&rtpof=true&sd=true">GDrive</a>
+				</p>
+				<image id="screenshot" src="public/media/rpg.tes.jpg" height="500"></image>
+				<p id="description">A homebrew sourcebook for running 5.5 Edition Dungeons & Dragons campaigns set in The Elder Scrolls setting. I made it with a "lightweight" design philsophy; rely on established D&D rules and only add/change what the ruleset does not accomodate. Includes new player races, birthsigns (implemented as backgrounds), magic items and artifacts from the games, and a new system for enchanting your own equipment.</p>
+			</section>
+
+			<section>
+				<h3 id="title">The Oblivion Crisis</h3>
+				<p id="link">
+					Link:
+					<a href="https://drive.google.com/drive/folders/1vz_o0k9FUNaXVJhgiv-zTExZyc4WYf0c?usp=sharing">GDrive</a>
+				</p>
+				<image id="screenshot" src="public/media/rpg.oblivion.jpeg" height="500"></image>
+				<p id="description">A custom campaign designed to be run using the above TES Adventures homebrew module. Functions as a remake of TES4: Oblivion, but with numerous aspects modified for better storytelling, better attention to detail, and to better facilitate multiple player characters being present.</p>
+			</section>
+
+			<section>
+				<h3 id="title">Random Encounter - Mimic Colony</h3>
+				<p id="link">
+					Link:
+					<a href="https://docs.google.com/document/d/1GZCidOqAAAQFPaB_Ow1npnoTlpb_acP9ON_5d_eVOZE/edit?usp=sharing">GDrive</a>
+				</p>
+				<image id="screenshot" src="public/media/rpg.mimics.png" height="500"></image>
+				<p id="description">A homebrew random encounter in which the party encounters a strange house in the wilderness. This house turns out to be a mimic colony. Indeed, every part of the house, from the furniture to the doors to the very floorboards, are mimics!</p>
+			</section>
+
+			<section>
+				<h3 id="title">D&D 5e Homebrew Rules and Mechanics</h3>
+				<p id="link">
+					Link:
+					<a href="https://drive.google.com/drive/folders/19HW0PG6WUaWRgLMRZZKJ2FznzIU1NnKp?usp=drive_link">GDrive</a>
+				</p>
+				<image id="screenshot" src="https://media.dndbeyond.com/compendium-images/tcoe/0gqawlEa2tjXGxpc/04-001.tasha-chess.jpg" height="500"></image>
+				<p id="description">A series of additional or modified features for popular 5th Edition Dungeons & Dragons to make the game better, easier to manage, and generally more fun.</p>
+			</section>
+
+			<section>
+				<h3 id="title">Adventurers [WIP]</h3>
+				<p id="link">
+					Link:
+					<a href="https://drive.google.com/drive/folders/1Ir0xj0WJPRwaBnXDfjmLK0k7tOdQjd_v?usp=drive_link">GDrive</a>
+				</p>
+				<image id="screenshot" src="public/media/rpg.adventurers.png" height="500"></image>
+				<p id="description">A WIP custom TTRPG ruleset I’ve been working on, with the goal of incorporating several features from rulesets I like, while also addressing “pain points” I’ve found, such as poor luck making resources feel wasted.</p>
+			</section>
+		</section>
 	</div>
 </body>
 </html>
